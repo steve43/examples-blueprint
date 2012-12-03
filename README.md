@@ -1,0 +1,4 @@
+silence
+=======
+
+Silence is golden.
