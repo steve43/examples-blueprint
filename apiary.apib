@@ -1,0 +1,67 @@
+--- Weird Testing Examples ---
+
+--
+There are examples of code for testing the coloring and right templates generating
+--
+
+weird url?
+POST /text
+> Content-Type: text/plain
+<<<EOT
+
+ any content
+ .
+that may include newlines
+
+ddddd  ddd
+\n\n
+EOT
+< 200
+< Content-Type: text/plain
+<<<EOT
+
+any content
+
+that may include newlines
+
+EOT
+
+weird url?
+POST /css
+> Content-Type: text/css
+<<<EOT
+body {
+    color: @color;
+    background: #background;
+    margin: @margin;
+}
+div {
+    padding: @padding;
+}
+EOT
+< 200
+< Content-Type: text/css
+<<<EOT
+body {
+    color: red;
+    background: #ffffff;
+    margin: 0 0 40px 60px;
+}
+div {
+    padding: 20px;
+}
+EOT
+
+gimme json
+POST /json
+> Content-type: application/json
+{
+    "some"     :"json",
+    "contains" : "newlines\n\n"
+}
+< 200
+< Content-type: application/json
+{
+    "cool" : "data",
+    "and"  : "newlines NOT"
+}
