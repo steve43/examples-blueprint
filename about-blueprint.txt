@@ -1,0 +1,5 @@
+--- Weird Code Examples ---
+
+---
+For showing, that the language-examples templates are in OK state.
+---
