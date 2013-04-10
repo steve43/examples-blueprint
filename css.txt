@@ -1,0 +1,25 @@
+some CSS stuff
+POST /css
+> Content-Type: text/css
+<<<EOT
+body {
+    color: @color;
+    background: #background;
+    margin: @margin;
+}
+div {
+    padding: @padding;
+}
+EOT
+< 200
+< Content-Type: text/css
+<<<EOT
+body {
+    color: red;
+    background: #ffffff;
+    margin: 0 0 40px 60px;
+}
+div {
+    padding: 20px;
+}
+EOT
