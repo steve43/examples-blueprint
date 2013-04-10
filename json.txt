@@ -1,0 +1,13 @@
+gimme json
+POST /json
+> Content-type: application/json
+{
+    "some"     :"json",
+    "contains" : "newlines\n\n"
+}
+< 200
+< Content-type: application/json
+{
+    "cool" : "data",
+    "and"  : "newlines NOT"
+}
