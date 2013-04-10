@@ -1,0 +1,22 @@
+weird url?
+POST /text
+> Content-Type: text/plain
+<<<EOT
+
+ any content
+ .
+ . . . . . . . . ;;;;;
+that may include newlines
+
+ddddd  ddd
+\n\n
+EOT
+< 200
+< Content-Type: text/plain
+<<<EOT
+
+any content
+
+that may include newlines
+
+EOT
