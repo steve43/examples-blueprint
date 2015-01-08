@@ -1,25 +1,20 @@
-some CSS stuff
-POST /css
-> Content-Type: text/css
+some TEXT
+POST /text?new
+> Content-Type: text/plain
 <<<EOT
-body {
-    color: @color;
-    background: #background;
-    margin: @margin;
-}
-div {
-    padding: @padding;
-}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 EOT
 < 200
-< Content-Type: text/css
+< Content-Type: text/plain
 <<<EOT
-body {
-    color: red;
-    background: #ffffff;
-    margin: 0 0 40px 60px;
-}
-div {
-    padding: 20px;
-}
+SAVEd...
+
+
+or not?
+
 EOT
