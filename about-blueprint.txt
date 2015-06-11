@@ -1,5 +1,5 @@
 --- Weird Code Examples ---
 
 ---
-This documentation is here only for one purpose: To show the language-examples templates are in OK state.
+This documentation is here only for one purpose: To show the language-examples templates are in OK state. Hi!
 ---
